@@ -6,7 +6,8 @@ group Server
     nuget Giraffe ~> 1
     nuget Microsoft.AspNetCore
     nuget Microsoft.AspNetCore.StaticFiles
-    nuget Fable.Remoting.Giraffe 
+    nuget Fable.Remoting.Giraffe
+    nuget MiniProfiler.AspNetCore.Mvc
 
 group Client
     storage: none

@@ -37,6 +37,11 @@ module.exports = {
     },
     devServer: {
         proxy: {
+            // request the index page from Giraffe to get MiniProfiler scripts...
+            '/': {
+                target: 'http://localhost:' + port,
+                changeOrigin: true
+            },
             '/api/*': {
                 target: 'http://localhost:' + port,
                 changeOrigin: true
